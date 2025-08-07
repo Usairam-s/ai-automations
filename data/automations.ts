@@ -171,6 +171,35 @@ const automations = [
       ],
     },
   },
+  {
+    id: "automation-6",
+    title: "Remove Background from Images with AI Totally Free",
+    tags: ["Custom Code", "Make.com", "AI"],
+    images: [
+      {
+        id: "img-1",
+        url: "https://res.cloudinary.com/dmx22dkwy/image/upload/v1754527766/Screenshot_2025-08-07_054112_pitmpj.png",
+        alt: "AI Background Remover Screenshot",
+      },
+    ],
+    description:
+      "Enter an image URL, and the AI will automatically remove the background and return a transparent version of the image — all for free.",
+
+    details: {
+      input: ["Image URL"],
+      process: [
+        "User submits an image URL",
+        "Automation processes the image to remove its background",
+        "Final image with transparent background is returned",
+      ],
+      output: ["Transparent-background image"],
+      benefits: [
+        "Completely free to use",
+        "No software installation required",
+        "Perfect for selfies, headshots, product photos, and more",
+      ],
+    },
+  },
 ];
 
 export default automations;
