@@ -11,7 +11,7 @@ export default function FancyHeader() {
 
   return (
     <div>
-      <Link
+      {/* <Link
         href="/mini-products"
         className="absolute top-6 right-8 px-4 py-2 text-white text-sm font-thin rounded-md border border-white
              hover:bg-white hover:text-black transition duration-300 ease-in-out shadow-md
@@ -20,7 +20,7 @@ export default function FancyHeader() {
         data-aos-duration="800"
       >
         Mini Products ↗
-      </Link>
+      </Link> */}
 
       <section className="h-screen flex flex-col items-center justify-center text-center bg-black text-white px-4">
         <motion.h1
