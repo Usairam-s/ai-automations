@@ -336,6 +336,49 @@ const n8nAutomations: AutomationType[] = [
   },
   {
     id: "automation-3",
+    title: "LinkedIn Post Generator with Image Creation",
+    tags: [
+      "n8n",
+      "Tavily API",
+      "Huggingface",
+      "Google Gemini AI",
+      "Beautiful Web Interface",
+    ],
+    images: [
+      {
+        id: "n8n-1",
+        url: "https://res.cloudinary.com/dmx22dkwy/image/upload/v1759188538/n5-2_mt3oqm.png",
+        alt: "n8n workflow preview",
+      },
+      {
+        id: "n8n-2",
+        url: "https://res.cloudinary.com/dmx22dkwy/image/upload/v1759188538/n5_dr9eag.png",
+        alt: "n8n workflow preview",
+      },
+    ],
+    description:
+      "Generate engaging LinkedIn posts and Images based on trending topics and research data from Web using Tvalily API to boost your professional presence.",
+    details: {
+      input: ["Post Topic"],
+      process: [
+        "User privdes a post topic and target audience via beautiful web interface",
+        "Use Tavily API to fetch relevant articles and data from the web",
+        "Generate an image using Huggingface",
+        "Analyze the content using Google Gemini AI",
+        "Generate a well-structured LinkedIn post with the image",
+      ],
+
+      output: ["Generated LinkedIn Post with Images"],
+      benefits: [
+        "No Manual Writing",
+        "Save Time",
+        "Increase Engagement",
+        "Boost Professional Presence",
+      ],
+    },
+  },
+  {
+    id: "automation-4",
     title: "Reserach Based LInkedIn Post Generator",
     tags: ["n8n", "Tavily API", "Google Sheets", "Google Gemini AI"],
     images: [
