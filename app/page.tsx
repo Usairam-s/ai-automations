@@ -929,7 +929,7 @@ export default function AutomationPortfolio() {
                 className="px-4 py-2 bg-gradient-to-r from-gray-800/80 to-gray-900/80 rounded-full border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 group flex items-center gap-2"
               >
                 <span className="text-gray-300 group-hover:text-white">
-                  useramaiapro@email.com
+                  useramaipro@email.com
                 </span>
                 <motion.span
                   whileHover={{ scale: 1.2 }}
@@ -1378,7 +1378,7 @@ export default function AutomationPortfolio() {
                 {
                   icon: "📧",
                   title: "Email",
-                  value: "useramaiapro@email.com",
+                  value: "useramaipro@email.com",
                   color: "blue",
                 },
                 {
