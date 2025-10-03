@@ -934,7 +934,7 @@ export default function AutomationPortfolio() {
 
             {/* Centered Navigation */}
             <div className="flex gap-8">
-              {["Home", "Automations", "About", "Contact"].map(
+              {["Home", "Automations", "GHL", "About", "Contact"].map(
                 (item, index) => (
                   <motion.button
                     key={item}
@@ -1034,8 +1034,9 @@ export default function AutomationPortfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
           >
-            Transforming businesses with powerful n8n and Make.com workflows.
-            Specialized in AI-powered automation solutions that scale.
+            Building smart automations with n8n, Make.com, and GoHighLevel. So
+            you close more leads, save hours, and grow without the tech
+            headaches.
           </motion.p>
 
           <motion.div
@@ -1232,6 +1233,172 @@ export default function AutomationPortfolio() {
         </div>
       </section>
 
+      {/* GoHighLevel Services Section */}
+      <section
+        id="ghl"
+        className="py-20 bg-gradient-to-br from-purple-900/20 via-black to-blue-900/20 relative overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(147,51,234,0.1),transparent_50%)]" />
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <motion.h2
+              className="text-5xl font-bold mb-4"
+              whileInView={{ scale: [0.9, 1] }}
+            >
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+                GoHighLevel Expertise
+              </span>
+            </motion.h2>
+            <motion.p
+              className="text-xl text-gray-300 max-w-3xl mx-auto"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              Transform your GHL workspace with custom solutions that enhance
+              functionality and user experience
+            </motion.p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {[
+              {
+                icon: "⚡",
+                title: "Custom JavaScript Injection",
+                description:
+                  "Inject custom JS code to extend GHL's native capabilities and create powerful, interactive features",
+                features: [
+                  "Advanced form validations",
+                  "Dynamic UI enhancements",
+                  "Custom tracking & analytics",
+                  "Interactive dashboards",
+                ],
+                color: "from-purple-500 to-pink-500",
+                bgGradient: "from-purple-500/10 to-pink-500/10",
+              },
+              {
+                icon: "🔗",
+                title: "GHL API & Third-Party API Integrations",
+                description:
+                  "Extend GoHighLevel’s power by connecting it with third-party apps and custom APIs for advanced automation and scalability.",
+                features: [
+                  "Seamless GHL API integrations",
+                  "Third-party API connections",
+                  "Two-way data synchronization",
+                  "Custom reporting & analytics",
+                ],
+                color: "from-orange-500 to-yellow-500",
+                bgGradient: "from-orange-500/10 to-yellow-500/10",
+              },
+
+              {
+                icon: "🎨",
+                title: "Custom Widgets & Components",
+                description:
+                  "Build beautiful, functional widgets that seamlessly integrate into your GHL workspace",
+                features: [
+                  "Data visualization tables",
+                  "Real-time dashboards",
+                  "Custom calculators",
+                  "Interactive forms",
+                ],
+                color: "from-blue-500 to-cyan-500",
+                bgGradient: "from-blue-500/10 to-cyan-500/10",
+              },
+              {
+                icon: "🚀",
+                title: "Funnels & Websites",
+                implementation: [
+                  "High-converting funnels",
+                  "Responsive websites",
+                  "Landing pages that convert",
+                  "Custom CSS styling",
+                ],
+                description:
+                  "Design and build stunning funnels and websites optimized for conversion and user experience",
+                features: [
+                  "High-converting funnels",
+                  "Responsive websites",
+                  "Landing pages that convert",
+                  "Custom CSS styling",
+                ],
+                color: "from-green-500 to-emerald-500",
+                bgGradient: "from-green-500/10 to-emerald-500/10",
+              },
+            ].map((service, index) => (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2, duration: 0.6 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -10, scale: 1.02 }}
+                className="group relative"
+              >
+                {/* Animated border glow */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-r ${service.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 rounded-3xl`}
+                />
+
+                <div
+                  className={`relative h-full bg-gradient-to-br ${service.bgGradient} backdrop-blur-sm p-8 rounded-3xl border border-gray-700/50 group-hover:border-gray-600 transition-all duration-500 shadow-2xl`}
+                >
+                  {/* Icon */}
+                  <motion.div
+                    className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg`}
+                    whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    {service.icon}
+                  </motion.div>
+
+                  {/* Title */}
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-white group-hover:to-gray-300 transition-all">
+                    {service.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-gray-300 mb-6 leading-relaxed">
+                    {service.description}
+                  </p>
+
+                  {/* Features */}
+                  <div className="space-y-3">
+                    {service.features.map((feature, featureIndex) => (
+                      <motion.div
+                        key={feature}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.2 + featureIndex * 0.1 }}
+                        className="flex items-center gap-3 text-gray-300"
+                      >
+                        <div
+                          className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.color}`}
+                        />
+                        <span className="text-sm">{feature}</span>
+                      </motion.div>
+                    ))}
+                  </div>
+
+                  {/* Hover effect indicator */}
+                  <motion.div
+                    className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                  ></motion.div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Enhanced About Section */}
       <section
         id="about"
@@ -1260,16 +1427,18 @@ export default function AutomationPortfolio() {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
               >
-                I'm a passionate automation specialist with expertise in n8n and
-                Make.com platforms. With a strong software development
-                background, I help businesses streamline operations through
-                intelligent workflow automation, AI integration, and building
-                seamless user-friendly solutions.
+                I'm a passionate automation specialist With a strong background
+                in software development, I bring both technical depth and
+                automation expertise to every project. I specialize in n8n,
+                Make.com, and GoHighLevel, designing AI-powered workflows that
+                streamline operations, capture more leads, and save countless
+                hours.I Build systems that are powerful, reliable, and easy to
+                use.
               </motion.p>
 
               <div className="grid grid-cols-2 gap-6 mb-8">
                 {[
-                  { number: "50+", label: "Projects Completed", color: "blue" },
+                  { number: "30+", label: "Projects Completed", color: "blue" },
                   {
                     number: "80%",
                     label: "Avg Efficiency Gain",
